@@ -46,7 +46,7 @@ const Hero: React.FC<HeroProps> = ({ t, info }) => {
                 {t.cta} <ArrowRight size={20} />
               </a>
               <a
-                  href="/2025_03cv.pdf"
+                  href={`${import.meta.env.BASE_URL}2025_03cv.pdf`}
                   download="CV_NguyenQuangLong.pdf"
                   className="px-8 py-3 bg-slate-800 hover:bg-slate-700 text-white font-semibold rounded-lg flex items-center gap-2 transition-all border border-slate-700 hover:border-slate-600"
               >
@@ -65,10 +65,10 @@ const Hero: React.FC<HeroProps> = ({ t, info }) => {
               <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full blur-2xl opacity-30 animate-pulse" />
               <div className="relative w-full h-full rounded-full border-4 border-slate-800 overflow-hidden bg-slate-800">
                 {/* Placeholder for Profile Image */}
-                <img 
-                  src="/avatar.png"
-                  alt="Nguyen Quang Long" 
-                  className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity"
+                <img
+                    src={`${import.meta.env.BASE_URL}avatar.png`}
+                    alt="Nguyen Quang Long"
+                    className="w-full h-full object-cover opacity-90 hover:opacity-100 transition-opacity"
                 />
               </div>
             </div>
